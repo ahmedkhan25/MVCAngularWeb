@@ -1,0 +1,23 @@
+﻿<h1>Customer List</h1>
+
+<table class="table table-hover table-bordered">
+  <tr>
+    <th>ID</th>
+    <th>Contact Name</th>
+    <th>Contact Title</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>Postal Code</th>
+    <th>Country</th>
+  </tr>
+  <tr ng-repeat="item in data.customers">
+    <td>{{item.CustomerID}}</td>
+	<td>{{item.ContactName}}</td>
+	<td>{{item.ContactTitle}}</td>
+	<td>{{item.Address}}</td>
+	<td>{{item.City}}</td>
+	<td>{{item.PostalCode}}</td>
+	<td>{{item.Country}}</td>
+  </tr>
+</table>
+
